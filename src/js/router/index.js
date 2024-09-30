@@ -1,6 +1,16 @@
 // This function controls which JavaScript file is loaded on which page
 // In order to add additional pages, you will need to implement them below
 // You may change the behaviour or approach of this file if you choose
+/**
+ * This function controls which JavaScript file is loaded on which page.
+ * In order to add additional pages, you will need to implement them below.
+ * You may change the behaviour or approach of this file if you choose.
+ * 
+ * @async
+ * @function router
+ * @param {string} [pathname=window.location.pathname] - The path of the current page.
+ * @returns {Promise<void>} - A promise that resolves when the appropriate module is loaded.
+ */
 export default async function router(pathname = window.location.pathname) {
   switch (pathname) {
     case "/":
